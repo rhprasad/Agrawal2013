@@ -1,0 +1,35 @@
+﻿@model PirateThis.Domain.Entities.Song
+
+<div class="item">
+    @if (Model.MP3Data != null)
+    {
+        if (User.Identity.IsAuthenticated) 
+        {
+        <div style="float: right; margin-right: 20px">
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="165" height="38" id="niftyPlayer1" align="">
+                <param name=movie value="/Content/niftyplayer.swf?file=@Url.Action("GetMP3", "Song", new { Model.SongID })">
+                <param name="quality" value="high">
+                <param name="bgcolor" value="#FFFFFF">
+                <embed src="/Content/niftyplayer.swf?file=@Url.Action("GetMP3", "Song", new { Model.SongID })" quality=high bgcolor=#FFFFFF width="165" height="38" name="niftyPlayer1" align="" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+                </embed>
+            </object>
+        </div>
+        }
+    }
+
+    <h3>@Model.Title</h3>
+    @if (!Model.Description.IsEmpty())
+    {
+        @:<h4>Description: @Model.Description</h4>
+    }
+    <div id="Comment-@Model.SongID">
+        <ul>
+            @{Html.RenderAction("List", "Comment", new { songID = Model.SongID });}
+        </ul>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        // @Html.ActionLink("Comment on this song.", "Add", "Comment", new { songId = @Model.SongID }, new { target = "_blank" });
+        <button class="add-comment" value="@Model.SongID">Add a comment</button> 
+    }
+</div>

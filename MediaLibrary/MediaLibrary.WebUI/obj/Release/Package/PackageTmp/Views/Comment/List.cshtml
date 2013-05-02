@@ -1,0 +1,11 @@
+﻿@model PirateThis.WebUI.Models.CommentsListViewModel
+
+@{
+    Layout = null;
+}
+
+@foreach (var s in Model.Comments)
+{
+    Html.RenderPartial("CommentsSummary", s);
+}
+

@@ -1,0 +1,8 @@
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Release\MediaLibrary.Domain.dll.config
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Release\MediaLibrary.Domain.dll
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Release\MediaLibrary.Domain.pdb
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Release\EntityFramework.dll
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Release\EntityFramework.xml
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\obj\Release\MediaLibrary.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\obj\Release\MediaLibrary.Domain.dll
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\obj\Release\MediaLibrary.Domain.pdb

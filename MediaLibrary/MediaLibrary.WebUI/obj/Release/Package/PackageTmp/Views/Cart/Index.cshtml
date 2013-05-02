@@ -1,0 +1,41 @@
+﻿@model PirateThis.WebUI.Models.CartIndexViewModel
+
+@{
+    ViewBag.Title = "Media Library: Your Cart";
+}
+
+<h2>Index</h2>
+<table width="90%" align="center">
+    <thead><tr>
+        <th align="center">Artist</th>
+        <th align="center">Title</th>
+        <th align="center">Album</th>
+    </tr></thead>
+<tbody>
+    @foreach(var line in Model.Cart.Lines) {
+        <tr>
+            <td align="center">@line.Song.Artist</td>
+            <td align="center">@line.Song.Title</td>
+            <td align="center">@line.Song.Album</td>
+            <td>
+                @using (Html.BeginForm("RemoveFromCart", "Cart")) {        
+                    @Html.Hidden("SongID", line.Song.SongID)
+                    @Html.HiddenFor(x => x.ReturnUrl)
+                    <input class="actionButtons" type="submit" 
+                        value="Remove" />
+                }
+            </td>
+        </tr>
+    }
+</tbody>
+    <tfoot><tr>
+        <td colspan="3" align="center">Total:</td>
+        <td align="center">
+            @Model.Cart.ComputeTotalValue() Bitcoins
+        </td>
+    </tr></tfoot>
+</table>
+<p align="center" class="actionButtons">
+    <a href="@Model.ReturnUrl">Continue shopping</a>
+    @Html.ActionLink("Checkout now", "Checkout")
+</p>

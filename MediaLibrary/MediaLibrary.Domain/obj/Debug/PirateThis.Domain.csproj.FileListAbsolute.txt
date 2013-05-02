@@ -1,0 +1,8 @@
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Debug\MediaLibrary.Domain.dll.config
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Debug\MediaLibrary.Domain.dll
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Debug\MediaLibrary.Domain.pdb
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\obj\Debug\MediaLibrary.Domain.dll
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\obj\Debug\MediaLibrary.Domain.pdb
+C:\Users\Ryan\documents\visual studio 2012\Projects\MediaLibrary\MediaLibrary.Domain\obj\Debug\PirateThis.Domain.csprojResolveAssemblyReference.cache

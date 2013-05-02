@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-PirateThis.WebUI-20130301130540;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-PirateThis.WebUI-20130301130540.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ryan\\Documents\\Visual\ Studio\ 2012\\Projects\\MediaLibrary\\MediaLibrary\.WebUI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="EFDbContext-Web.config Connection String" description="EFDbContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=RYAN-DB;Initial Catalog=MediaLibrary;Integrated Security=False;User Id=APP;Password=VTJvH1jSvg70uL72goJo;MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ryan\\Documents\\Visual\ Studio\ 2012\\Projects\\MediaLibrary\\MediaLibrary\.WebUI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EFDbContext']/@connectionString" />
+  </parameter>
+</parameters>

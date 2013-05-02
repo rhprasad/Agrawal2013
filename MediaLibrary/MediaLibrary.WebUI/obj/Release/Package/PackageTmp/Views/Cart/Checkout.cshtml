@@ -1,0 +1,20 @@
+﻿@model PirateThis.Domain.Entities.CustomerDetails
+
+@{
+    ViewBag.Title = "Media Library: Checkout";
+}
+
+<h2>Checkout now</h2>
+@using (Html.BeginForm())
+{
+    
+    @Html.ValidationSummary()
+    
+    <div>Name: @Html.EditorFor(x => x.Name)</div>
+    <div>E-mail Address: @Html.EditorFor(x => x.Email)</div>
+    <div>Bitcoin Address: @Html.EditorFor(x => x.Bitcoin)</div>
+    
+    <p align="center">
+        <input class="actionButtons" type="submit" value="Complete order" />
+    </p>
+}

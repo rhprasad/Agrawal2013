@@ -1,0 +1,30 @@
+﻿@model PirateThis.Domain.Entities.Comment
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add Comment</title>
+    @if (ViewBag.Processed == true)
+    {
+        <script>window.close();
+        </script>
+    }
+</head>
+<body>
+    <!-- Add confirmation message -->
+    <div align="center">
+        @using (Html.BeginForm())
+        {
+            @Html.EditorForModel()
+            <input type="hidden" name="SongID2" value="@ViewBag.SongID" />
+            <input type="submit" value="Save" />
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿@model PirateThis.Domain.Entities.Song
+
+<div style="float: right; margin-right: 20px">
+    <img width="250" height="250" src="@Url.Action("GetImage", "Song", new { Model.SongID })" />
+</div>
+<div id="item">
+    <h2><b>@Model.Artist</b></h2>
+    <h3>Album: @Model.Album</h3>
+    <h3>Year: @Model.Year</h3>
+    <h3>Genre: @Model.Genre</h3>
+</div>

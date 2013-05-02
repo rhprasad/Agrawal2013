@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PirateThis.Domain.Entities.Song>
+
+@{
+    ViewBag.Title = "Admin: All Songs";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>All Songs</h2>
+<p>@Html.ActionLink("Create New", "Create")</p>
+<table class="grid">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>Year</th>
+        <th>Actions</th>
+    </tr>
+
+@foreach (var song in Model)
+{
+    <tr>
+        <td>@song.SongID</td>
+        <td>@Html.ActionLink(song.Title, "Edit", new { song.SongID })</td>
+        <td>@song.Artist</td>
+        <td>@song.Album</td>
+        <td>@song.Year</td>
+        <td>
+            @using (Html.BeginForm("Delete", "Admin"))
+            {
+                @Html.Hidden("SongID", song.SongID)
+                <input type="submit" value="Delete" />
+            }
+        </td>
+    </tr>
+}
+</table>
+<p>@Html.ActionLink("Add a new song", "Create")</p>
